@@ -1,0 +1,13 @@
+*.log
+*.elc
+*.eld
+*.dat
+*.lsp-*
+recentf
+.DS_Store
+/elpa
+/eshell/*
+!/eshell/alias
+/backups
+/auto-save-list
+/transient
