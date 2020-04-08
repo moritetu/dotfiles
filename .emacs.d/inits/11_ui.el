@@ -43,6 +43,19 @@
   (setq ivy-initial-inputs-alist nil)
   (counsel-mode 1))
 
+(use-package projectile
+  :ensure t
+  :bind (:map projectile-mode-map
+              ("C-c p" . projectile-command-map)))
+
+(use-package counsel-projectile
+  :ensure t
+  :config
+  (setq counsel-projectile-sort-files t)
+  (setq counsel-projectile-sort-projects t)
+  (counsel-projectile-mode 1))
+
+
 (use-package doom-themes
   :ensure t
   :custom

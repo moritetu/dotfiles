@@ -7,7 +7,7 @@
  '(doom-themes-enable-italic t)
  '(package-selected-packages
    (quote
-    (doom-modeline all-the-icons-dired all-the-icons yasnippet-snippets doom-themes ivy-rich undo-tree counsel wgrep-ag ag spinner swiper recentf-ext init-open-recentf exec-path-from-shell magit auto-insert yasnippet go-mode company-lsp company lsp-ui lsp-mode dired init-loader use-package))))
+    (counsel-gtags emacs-counsel-gtags doom-modeline all-the-icons-dired all-the-icons yasnippet-snippets doom-themes ivy-rich undo-tree counsel wgrep-ag ag spinner swiper recentf-ext init-open-recentf exec-path-from-shell magit auto-insert yasnippet go-mode company-lsp company lsp-ui lsp-mode dired init-loader use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

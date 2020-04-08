@@ -68,10 +68,3 @@
   (setq migemo-regex-dictionary nil)
   (load-library "migemo")
   (migemo-init))
-
-(use-package anzu
-  :ensure t
-  :config
-  (setq anzu-use-migemo t)
-  (setq anzu-search-threshold 1000)
-  (global-anzu-mode t))

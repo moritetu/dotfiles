@@ -35,9 +35,21 @@
   (setq c-basic-offset 4)
   (setq tab-width 4))
 
-
 ;; shell
 (add-hook 'sh-mode-hook (lambda ()
                           (setq indent-tabs-mode nil
                                 sh-basic-offset 2
                                 sh-indentation 2)))
+
+(use-package counsel-gtags
+  :ensure t
+  :hook ((c-mode . counsel-gtags-mode)
+         (c++-mode . counsel-gtags-mode))
+  :bind (:map counsel-gtags-mode-map
+              ("M-t" . counsel-gtags-find-definition)
+              ("M-r" . counsel-gtags-find-reference)
+              ("M-s" . counsel-gtags-find-symbol)
+              ("M-," . counsel-gtags-go-backward)))
+
+(add-hook 'eshell-mode-hook
+          #'(lambda () (company-mode -1)))
